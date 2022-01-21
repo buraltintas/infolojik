@@ -1,0 +1,136 @@
+.about {
+  padding-top: 10vh;
+
+  height: 95vh;
+  display: flex;
+  padding-right: 10%;
+  padding-left: 10%;
+  gap: 3rem;
+
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  color: rgb(236, 228, 228);
+}
+
+.image {
+  position: relative;
+  width: 50%;
+}
+
+.photo {
+  width: 50%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.514);
+  border-radius: 5px;
+  position: absolute;
+  transition: all 0.2s;
+  outline-offset: 2rem;
+}
+
+.photo:hover {
+  outline: 1.5rem solid rgb(110, 193, 227);
+  transform: scale(1.05) translateY(-0.5rem);
+  z-index: 10;
+}
+
+.photo1 {
+  left: 3%;
+  top: 2%;
+}
+
+.photo2 {
+  right: 0;
+  top: 10rem;
+}
+
+.photo3 {
+  left: 20%;
+  top: 25rem;
+}
+
+.dash {
+  width: 4rem;
+  height: 2px;
+  background-color: rgb(110, 193, 227);
+}
+
+.aboutUs {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-bottom: -2rem;
+}
+
+.aboutUsText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 2rem;
+}
+
+.aboutUsText h4 {
+  margin-top: 0.3rem;
+  color: rgb(255, 204, 2);
+  letter-spacing: 2px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.aboutUsText h3 {
+  color: rgb(110, 193, 227);
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 50%;
+  hyphens: auto;
+}
+
+.aboutText h1 {
+  font-size: 4rem;
+  text-shadow: 1rem 0.75rem 4rem rgba(0, 0, 0, 0.7);
+}
+
+.aboutText p {
+  font-size: 1.8rem;
+  line-height: 2;
+}
+
+.button {
+  width: 14rem;
+  padding: 1.5rem 3rem;
+  border-radius: 2rem;
+  transition: all 200ms;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #555;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 1rem 4rem rgba(110, 194, 227, 0.74);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 0.5rem 2rem rgba(110, 194, 227, 0.74);
+}

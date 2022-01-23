@@ -101,11 +101,19 @@
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.596);
 }
 
+.card > * {
+  transition: all 0.3s;
+}
+
 .card:hover {
   transform: translateY(-1rem);
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
   transform: skew(-6deg);
+}
+
+.card:hover > * {
+  transform: skew(6deg);
 }
 
 .cardHeader {

@@ -1,12 +1,11 @@
-.about {
-  padding-top: 10vh;
-
+.courses {
+  position: relative;
+  width: 100%;
   height: 95vh;
   display: flex;
+  justify-content: center;
   padding-right: 10%;
   padding-left: 10%;
-  gap: 3rem;
-
   background: #bdc3c7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -18,47 +17,9 @@
     #2c3e50,
     #bdc3c7
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  background-size: cover;
-  background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   color: rgb(236, 228, 228);
-}
-
-.image {
-  position: relative;
-  width: 50%;
-}
-
-.photo {
-  width: 50%;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.514);
-  border-radius: 5px;
-  position: absolute;
-  transition: all 0.2s;
-  outline-offset: 2rem;
-}
-
-.photo:hover {
-  outline: 1.5rem solid rgb(110, 193, 227);
-  transform: scale(1.05) translateY(-0.5rem);
-  z-index: 10;
-}
-
-.photo1 {
-  left: 3%;
-  top: 2%;
-}
-
-.photo2 {
-  right: 0;
-  top: 10rem;
-}
-
-.photo3 {
-  left: 20%;
-  top: 25rem;
 }
 
 .dash {
@@ -70,6 +31,7 @@
 .aboutUs {
   display: flex;
   align-items: center;
+
   gap: 1.8rem;
   margin-bottom: -2rem;
 }
@@ -83,7 +45,7 @@
 
 .aboutUsText h4 {
   margin-top: 0.3rem;
-  color: rgb(255, 204, 2);
+  color: rgb(255, 204, 0);
   letter-spacing: 2px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -93,14 +55,15 @@
   color: rgb(110, 193, 227);
 }
 
-.aboutText strong {
-  font-size: 2.8rem;
-  letter-spacing: 2px;
-}
-
 .aboutText {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-15%);
+
   display: flex;
   flex-direction: column;
+
   gap: 1.5rem;
   padding: 2rem;
   width: 50%;
@@ -113,29 +76,65 @@
 }
 
 .aboutText p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2;
 }
 
-.button {
-  width: 14rem;
-  padding: 1.5rem 3rem;
+.coursesContainer {
+  margin-top: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.courseCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30rem;
+  padding: 3rem;
+  padding-top: 11rem;
   border-radius: 2rem;
-  transition: all 200ms;
-  font-size: 2rem;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s;
-  color: #555;
+  color: #777;
+  background: #e0e0e0;
+  box-shadow: -0.3rem -0.3rem 3rem #c7c7c7, 0.2rem 0.2rem 3rem #f9f9f9;
 }
 
-.button:hover {
-  transform: translateY(-3px);
-
-  box-shadow: 0 1rem 4rem rgba(110, 194, 227, 0.74);
+.courseLogo {
+  width: 14rem;
+  border-radius: 2rem;
+  position: absolute;
+  top: -15%;
+  left: 8%;
+  box-shadow: 1rem 1rem 2rem #777;
 }
 
+.courseHeader {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+
+.detailText {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button:link,
 .button:active {
-  transform: translateY(0);
-  box-shadow: 0 0.5rem 2rem rgba(110, 194, 227, 0.74);
+  text-decoration: none;
 }

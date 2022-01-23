@@ -2,10 +2,19 @@ import logo from "../../logo.png";
 import classes from "./Header.module.css";
 
 const Header = () => {
+  const reloadPage = () => {
+    window.location.reload();
+  };
+
   return (
     <header className={classes.header}>
       <div className={classes.logoBox}>
-        <img src={logo} alt="Logo" className={classes.logo} />
+        <img
+          src={logo}
+          alt="Logo"
+          className={classes.logo}
+          onClick={reloadPage}
+        />
       </div>
       <div className={classes.textBox}>
         <h1 className={classes.headingPrimary}>

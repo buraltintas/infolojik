@@ -34,9 +34,9 @@ const About = () => {
         </h2>
         <h1>Hakkımızda</h1>
         <p>
-          infolojik, 2017 yılında Veri Ambarı, İş Zekası ve Büyük Veri
-          projelerini gerçekleştirmek üzere kurulmuş bilgi teknolojileri ve
-          ar-ge projeleri geliştiren bir teknoloji şirketidir.
+          <strong>infolojik</strong>, 2017 yılında Veri Ambarı, İş Zekası ve
+          Büyük Veri projelerini gerçekleştirmek üzere kurulmuş bilgi
+          teknolojileri ve ar-ge projeleri geliştiren bir teknoloji şirketidir.
         </p>
         <p>
           Hedefimiz müşteri memnuniyetini en üstte tutarak, verinin kaynağından

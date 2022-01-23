@@ -81,98 +81,82 @@
 }
 
 .services {
-  margin-top: 4rem;
-  position: relative;
+  margin-top: 16rem;
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 6rem;
 }
 
 .container {
-  position: absolute;
+  display: flex;
+}
 
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 10rem;
+.container h1 {
+  margin-bottom: 1rem;
+  font-size: 3.4rem;
+}
+
+.imgDiv {
+  width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.left1 {
-  right: 20%;
-}
-
-.left2 {
-  right: 3%;
-  top: 31.5%;
-}
-
-.right1 {
-  top: 25%;
-  left: 20%;
-}
-
-.imgLeft {
-  width: 40%;
-}
-
-.imgRight {
-  position: absolute;
-  width: 40%;
+  justify-content: flex-end;
 }
 
 .img {
-  width: 90%;
+  width: 60%;
   border-radius: 2rem;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.671);
+  background: #e0e0e0;
+  box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.363),
+    -10px -10px 30px rgba(0, 0, 0, 0.301);
+}
+
+.imgDivRight {
+  width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .textRight {
-  position: absolute;
-  right: 0;
-  background-color: rgb(221, 226, 230);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  border-radius: 1rem;
-  padding: 2rem;
+  position: relative;
   width: 40%;
-  box-shadow: 0 1rem 4rem rgba(110, 194, 227, 0.74);
 }
 
-.textLeft {
+.textContainer {
   position: absolute;
-
-  left: -5rem;
-  z-index: 100;
-
-  background-color: rgb(221, 226, 230);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  border-radius: 1rem;
+  border: 2px solid rgb(110, 193, 227);
+  width: 100%;
+  top: 50%;
+  left: -20%;
+  transform: translateY(-50%);
   padding: 2rem;
-  width: 40%;
-  box-shadow: 0 1rem 4rem rgba(110, 194, 227, 0.74);
-}
 
-.textRight h1 {
-  color: rgb(110, 193, 227);
-  font-size: 3rem;
-}
-
-.textRight p {
-  color: #555;
+  border-radius: 3rem;
+  background: linear-gradient(145deg, hsla(0, 0%, 94%, 0.9), #cacaca);
+  box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.363),
+    -10px -10px 30px rgba(0, 0, 0, 0.301);
+  color: rgb(122, 122, 122);
   font-size: 2rem;
 }
 
-.textLeft h1 {
-  color: rgb(110, 193, 227);
-  font-size: 3rem;
+.textLeft {
+  position: relative;
+  width: 40%;
 }
 
-.textLeft p {
-  color: #555;
+.textContainerLeft {
+  position: absolute;
+  border: 2px solid rgb(110, 193, 227);
+  width: 100%;
+  top: 50%;
+  right: -20%;
+  transform: translateY(-50%);
+  padding: 2rem;
+  border-radius: 3rem;
+  background: linear-gradient(145deg, hsla(0, 0%, 94%, 0.9), #cacaca);
+  box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.548),
+    -10px -10px 30px rgba(0, 0, 0, 0.301);
+  color: rgb(122, 122, 122);
   font-size: 2rem;
 }

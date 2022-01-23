@@ -3,6 +3,8 @@ import photo1 from "./photo1.jpeg";
 import photo2 from "./photo2.jpeg";
 import photo3 from "./photo3.jpeg";
 import photo4 from "./photo4.jpeg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Duty = () => {
   return (
@@ -19,40 +21,64 @@ const Duty = () => {
         <h1>Hizmetlerimiz</h1>
       </div>
       <div className={classes.services}>
-        <div className={`${classes.container} ${classes.left1}`}>
-          <div className={classes.imgLeft}>
+        <div data-aos="fade-right" className={classes.container}>
+          <div className={classes.imgDiv}>
             <img src={photo1} alt="" className={classes.img} />
           </div>
           <div className={classes.textRight}>
-            <h1>Danışmanlık</h1>
-            <p>
-              Müşterilerimizin projelerinde görevlendirilmek üzere alanında
-              uzman kadromuz ile verdiğimiz hizmettir.
-            </p>
+            <div className={classes.textContainer}>
+              <h1>Danışmanlık</h1>
+
+              <p>
+                Müşterilerimizin projelerinde görevlendirilmek üzere alanında
+                uzman kadromuz ile verdiğimiz hizmettir.
+              </p>
+            </div>
           </div>
         </div>
-        <div className={`${classes.container} ${classes.right1}`}>
+        <div data-aos="fade-left" className={classes.container}>
           <div className={classes.textLeft}>
-            <h1>Dış Kaynak</h1>
-            <p>
-              Müşterilerimizin kendi ekipleri içinde görevlendireceği alanında
-              uzman kadromuz ile verdiğimiz hizmettir.
-            </p>
+            <div className={classes.textContainerLeft}>
+              <h1>Dış Kaynak</h1>
+
+              <p>
+                Müşterilerimizin kendi ekipleri içinde görevlendireceği alanında
+                uzman kadromuz ile verdiğimiz hizmettir.
+              </p>
+            </div>
           </div>
-          <div className={classes.imgRight}>
+          <div className={classes.imgDivRight}>
             <img src={photo2} alt="" className={classes.img} />
           </div>
         </div>
-        <div className={`${classes.container} ${classes.left2}`}>
-          <div className={classes.imgLeft}>
-            <img src={photo1} alt="" className={classes.img} />
+        <div data-aos="fade-right" className={classes.container}>
+          <div className={classes.imgDiv}>
+            <img src={photo3} alt="" className={classes.img} />
           </div>
-          <div className={classes.textRight2}>
-            <h1>Eğitim</h1>
-            <p>
-              Müşterilerimizin iş zekası, veri ambarı ve büyük veri alanlarında
-              uygulamalı olarak sunduğumuz eğitim hizmetidir.
-            </p>
+          <div className={classes.textRight}>
+            <div className={classes.textContainer}>
+              <h1>Eğitim</h1>
+
+              <p>
+                Müşterilerimizin iş zekası, veri ambarı ve büyük veri
+                alanlarında uygulamalı olarak sunduğumuz eğitim hizmetidir.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" className={classes.container}>
+          <div className={classes.textLeft}>
+            <div className={classes.textContainerLeft}>
+              <h1>Bakım&Destek</h1>
+
+              <p>
+                Müşterilerimizin tamamlanan projeleri sonrasında ihtiyaç
+                duyulacak teknik veya operasyonel destek hizmetimizdir.
+              </p>
+            </div>
+          </div>
+          <div className={classes.imgDivRight}>
+            <img src={photo4} alt="" className={classes.img} />
           </div>
         </div>
       </div>

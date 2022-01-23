@@ -30,6 +30,7 @@
   height: 8rem;
   animation: moveInLeft 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
+  cursor: pointer;
 }
 
 .textBox {

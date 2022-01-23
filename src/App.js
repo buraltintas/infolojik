@@ -6,6 +6,9 @@ import Header from "./components/header/Header";
 import Solutions from "./components/solutions/Solutions";
 import classes from "./App.module.css";
 import Duty from "./components/duty/Duty";
+import Partners from "./components/partners/Partners";
+import References from "./components/references/References";
+import Courses from "./components/courses/Courses";
 
 function App() {
   useEffect(() => {
@@ -20,8 +23,18 @@ function App() {
       <div data-aos="fade-up">
         <Solutions />
       </div>
-
-      <Duty />
+      <div data-aos="fade-up">
+        <Duty />
+      </div>
+      <div data-aos="fade-up">
+        <Partners />
+      </div>
+      <div data-aos="fade-up">
+        <References />
+      </div>
+      <div data-aos="fade-up">
+        <Courses />
+      </div>
     </React.Fragment>
   );
 }

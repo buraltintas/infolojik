@@ -98,8 +98,8 @@
   padding-top: 11rem;
   border-radius: 2rem;
   color: #777;
-  background: #e0e0e0;
-  box-shadow: -0.3rem -0.3rem 3rem #c7c7c7, 0.2rem 0.2rem 3rem #f9f9f9;
+  background: rgba(224, 224, 224, 0.95);
+  box-shadow: -0.3rem -0.3rem 3rem #c7c7c7;
 }
 
 .courseLogo {
@@ -114,6 +114,13 @@
 .courseHeader {
   font-size: 3rem;
   text-align: center;
+}
+
+.border {
+  width: 6rem;
+  height: 0.2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
 }
 
 .icon {
@@ -135,6 +142,28 @@
 }
 
 .button:link,
-.button:active {
+.button:visited {
   text-decoration: none;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  border-radius: 2rem;
+  transition: all 200ms;
+  font-size: 2rem;
+  border: 1px solid rgba(110, 194, 227, 0.74);
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #555;
+  animation: moveInBottom 0.5s ease-out 1s;
+  animation-fill-mode: backwards;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  border-radius: 1rem;
+  box-shadow: 0 1rem 4rem rgba(110, 194, 227, 0.74);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 0.5rem 2rem rgba(110, 194, 227, 0.74);
 }

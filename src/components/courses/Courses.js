@@ -26,6 +26,7 @@ const Courses = () => {
               alt="logo of oracle"
             />
             <h1 className={classes.courseHeader}>Oracle</h1>
+            <div className={classes.border}></div>
             <div className={classes.detail}>
               <div className={classes.detailText}>
                 <svg
@@ -112,7 +113,7 @@ const Courses = () => {
                 <p>Modelleme</p>
               </div>
             </div>
-            <a className={classes.button} href="#">
+            <a className={classes.button} href="mailto:info@infolojik.com">
               Detaylar
             </a>
           </div>
@@ -123,6 +124,7 @@ const Courses = () => {
               alt="logo of microsoft"
             />
             <h1 className={classes.courseHeader}>Microsoft</h1>
+            <div className={classes.border}></div>
             <div className={classes.detail}>
               <div className={classes.detailText}>
                 <svg
@@ -209,7 +211,7 @@ const Courses = () => {
                 <p>Modelleme</p>
               </div>
             </div>
-            <a className={classes.button} href="#">
+            <a className={classes.button} href="mailto:info@infolojik.com">
               Detaylar
             </a>
           </div>
@@ -220,6 +222,7 @@ const Courses = () => {
               alt="logo of pentaho"
             />
             <h1 className={classes.courseHeader}>Pentaho</h1>
+            <div className={classes.border}></div>
             <div className={classes.detail}>
               <div className={classes.detailText}>
                 <svg
@@ -306,7 +309,7 @@ const Courses = () => {
                 <p>Modelleme</p>
               </div>
             </div>
-            <a className={classes.button} href="#">
+            <a className={classes.button} href="mailto:info@infolojik.com">
               Detaylar
             </a>
           </div>

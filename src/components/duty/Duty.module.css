@@ -24,7 +24,7 @@
 
 .dash {
   width: 4rem;
-  height: 2px;
+  height: 0.2rem;
   background-color: rgb(110, 193, 227);
 }
 
@@ -46,9 +46,9 @@
 .aboutUsText h4 {
   margin-top: 0.3rem;
   color: rgb(255, 204, 0);
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 0.3rem;
 }
 
 .aboutUsText h3 {
@@ -108,8 +108,8 @@
   width: 60%;
   border-radius: 2rem;
   background: #e0e0e0;
-  box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.363),
-    -10px -10px 30px rgba(0, 0, 0, 0.301);
+  box-shadow: 1rem 1rem 3rem rgba(190, 190, 190, 0.363),
+    -1rem -1rem 3rem rgba(0, 0, 0, 0.301);
 }
 
 .imgDivRight {
@@ -125,7 +125,7 @@
 
 .textContainer {
   position: absolute;
-  border: 2px solid rgb(110, 193, 227);
+  border: 0.2rem solid rgb(110, 193, 227);
   width: 100%;
   top: 50%;
   left: -20%;
@@ -134,8 +134,8 @@
 
   border-radius: 3rem;
   background: linear-gradient(145deg, hsla(0, 0%, 94%, 0.9), #cacaca);
-  box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.363),
-    -10px -10px 30px rgba(0, 0, 0, 0.301);
+  box-shadow: 1rem 1rem 3rem rgba(190, 190, 190, 0.363),
+    -1rem -1rem 3rem rgba(0, 0, 0, 0.301);
   color: rgb(122, 122, 122);
   font-size: 2rem;
 }
@@ -147,7 +147,7 @@
 
 .textContainerLeft {
   position: absolute;
-  border: 2px solid rgb(110, 193, 227);
+  border: 0.2rem solid rgb(110, 193, 227);
   width: 100%;
   top: 50%;
   right: -20%;
@@ -155,8 +155,8 @@
   padding: 2rem;
   border-radius: 3rem;
   background: linear-gradient(145deg, hsla(0, 0%, 94%, 0.9), #cacaca);
-  box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.548),
-    -10px -10px 30px rgba(0, 0, 0, 0.301);
+  box-shadow: 1rem 1rem 3rem rgba(190, 190, 190, 0.548),
+    -1rem -1rem 3rem rgba(0, 0, 0, 0.301);
   color: rgb(122, 122, 122);
   font-size: 2rem;
 }

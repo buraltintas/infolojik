@@ -12,8 +12,8 @@
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 
   animation: moveInBottom 0.5s ease-out 0.3s;
   animation-fill-mode: backwards;
@@ -50,7 +50,7 @@
 }
 
 .headingPrimaryMain {
-  border-bottom: 2px solid rgb(110, 193, 227);
+  border-bottom: 0.2rem solid rgb(110, 193, 227);
   padding-bottom: 2rem;
   animation: moveInRight 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
@@ -90,7 +90,7 @@
 }
 
 .button:hover {
-  transform: translateY(-3px);
+  transform: translateY(-0.3rem);
 
   box-shadow: 0 1rem 4rem rgba(110, 194, 227, 0.74);
 }

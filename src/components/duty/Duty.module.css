@@ -15,7 +15,7 @@
   background: linear-gradient(
     to top,
     #2c3e50,
-    #bdc3c7
+    rgb(189, 195, 199)
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 180vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 180vh, 0 100%);

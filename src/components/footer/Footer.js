@@ -2,9 +2,12 @@ import React from "react";
 import styles from "./Footer.module.css";
 import "./Footerlogo.css";
 import logo from "../../logo.png";
+import Map from "./Map";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 const Footer = () => {
   const year = new Date().getFullYear();
+  const position = [40.994397914530765, 29.06356160848624];
 
   return (
     <footer className={styles.sectionFooter}>
@@ -82,20 +85,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={styles.footerMap}></div>
+        <Map />
       </div>
       <div className={styles.footer}>
         <p className={styles.copyright}>
           <strong>infolojik</strong> &copy; {year} | Tüm hakları saklıdır.
         </p>
         <div>
-          <a href="https://www.facebook.com/profile.php?id=616346676">
+          <a href="https://www.facebook.com/infolojik">
             <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
           </a>
-          <a href="https://twitter.com/burak_alti">
+          <a href="https://twitter.com/infolojik">
             <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
           </a>
-          <a href="https://www.linkedin.com/in/burak-alt%C4%B1nta%C5%9F-8b796b1b8/">
+          <a href="https://www.linkedin.com/company/infolojik/">
             <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
           </a>
         </div>

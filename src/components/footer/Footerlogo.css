@@ -7,5 +7,6 @@
 }
 
 .social-icon:hover {
-  color: #494949;
+  color: rgba(110, 194, 227, 0.75);
+  transform: scale(1.05);
 }

@@ -9,6 +9,7 @@ import Duty from "./components/duty/Duty";
 import Partners from "./components/partners/Partners";
 import References from "./components/references/References";
 import Courses from "./components/courses/Courses";
+import Footer from "./components/footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -34,6 +35,9 @@ function App() {
       </div>
       <div data-aos="fade-up">
         <Courses />
+      </div>
+      <div data-aos="fade-up">
+        <Footer />
       </div>
     </React.Fragment>
   );

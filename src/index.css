@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  width: 100vw;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  padding: 3rem;
+
   color: rgb(122, 122, 122);
   background-color: rgb(189, 195, 199);
   /* box-shadow: inset 1rem 0.1rem 8rem black; */

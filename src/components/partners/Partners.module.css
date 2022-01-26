@@ -1,6 +1,6 @@
 .partners {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 95vh;
   display: flex;
   justify-content: center;

@@ -1,6 +1,6 @@
 .duty {
   position: relative;
-  width: 100%;
+  width: 100vw;
   /* height: 100vh; */
   padding-bottom: 20%;
   display: flex;

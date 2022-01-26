@@ -1,9 +1,16 @@
+import { useState } from "react";
 import logo from "../../logo.png";
 import classes from "./Header.module.css";
 
 const Header = (props) => {
-  const reloadPage = () => {
-    window.location.reload();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
   return (

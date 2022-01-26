@@ -10,13 +10,11 @@ import Partners from "./components/partners/Partners";
 import References from "./components/references/References";
 import Courses from "./components/courses/Courses";
 import Footer from "./components/footer/Footer";
-import Map from "./components/footer/Map";
+
 import "./App.css";
 import logo from "./logo.png";
 
 function App() {
-  const [isOnTop, setIsOnTop] = useState(false);
-
   const about = useRef();
   const solutions = useRef();
   const duty = useRef();
@@ -25,13 +23,37 @@ function App() {
   const courses = useRef();
   const footer = useRef();
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  function useOutsideAlerter(ref) {
+    useEffect(() => {
+      /**
+       * Alert if clicked on outside of element
+       */
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          setMenuOpen(false);
+        }
+      }
+
+      // Bind the event listener
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        // Unbind the event listener on clean up
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
+
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
+
   const scrollTop = () => {
     window.scrollTo({
       top: 0,
       left: 0,
       behavior: "smooth",
     });
-    setIsOnTop(true);
   };
 
   const scrollAbout = () => {
@@ -81,7 +103,107 @@ function App() {
   }, []);
   return (
     <React.Fragment>
-      <div className={classes.logoBox}>
+      <nav className={classes.navigation}>
+        <div className={classes.logoBox}>
+          <img
+            src={logo}
+            alt="Logo"
+            className={classes.logo}
+            onClick={scrollTop}
+          />
+        </div>
+        <div ref={wrapperRef} className={classes.menu}>
+          <div onClick={() => setMenuOpen(!menuOpen)}>
+            {!menuOpen ? (
+              <svg
+                className={classes.navIcon}
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="40"
+                  y1="128"
+                  x2="216"
+                  y2="128"
+                  stroke="#000000"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                ></line>
+                <line
+                  x1="40"
+                  y1="64"
+                  x2="216"
+                  y2="64"
+                  stroke="#000000"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                ></line>
+                <line
+                  x1="40"
+                  y1="192"
+                  x2="216"
+                  y2="192"
+                  stroke="#000000"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                ></line>
+              </svg>
+            ) : (
+              <svg
+                className={classes.navIcon}
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="200"
+                  y1="56"
+                  x2="56"
+                  y2="200"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="200"
+                  y1="200"
+                  x2="56"
+                  y2="56"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+              </svg>
+            )}
+          </div>
+          {menuOpen && (
+            <div className={classes.sideMenu}>
+              <ul>
+                <li>Hakkımızda</li>
+                <li>Çözümlerimiz</li>
+                <li>Hizmetlerimiz</li>
+                <li>Çözüm Ortaklarımız</li>
+                <li>Referanslarımız</li>
+                <li>Eğitimlerimiz</li>
+                <li>İletişim</li>
+              </ul>
+            </div>
+          )}
+        </div>
+      </nav>
+      {/* <div className={classes.logoBox}>
         <img
           src={logo}
           alt="Logo"
@@ -127,9 +249,10 @@ function App() {
             </li>
           </ul>
         </nav>
-      </div>
+      </div> */}
 
       <Header scrollAbout={scrollAbout} />
+
       <div ref={about} data-aos="fade-up">
         <About scrollSolutions={scrollSolutions} />
       </div>

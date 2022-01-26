@@ -1,6 +1,7 @@
 .header {
   position: relative;
   height: 95vh;
+  width: 100%;
   background-image: linear-gradient(
       to right bottom,
       rgba(58, 24, 24, 0.7),
@@ -14,23 +15,10 @@
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   animation: moveInBottom 0.5s ease-out 0.3s;
   animation-fill-mode: backwards;
-  z-index: 9999;
-}
-
-.logoBox {
-  position: absolute;
-  top: 5rem;
-  left: 5rem;
-}
-
-.logo {
-  height: 8rem;
-  animation: moveInLeft 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
-  cursor: pointer;
 }
 
 .textBox {
@@ -167,6 +155,6 @@
 
 @keyframes underline {
   100% {
-    text-shadow: 0 1rem 2rem rgba(110, 194, 227);
+    text-shadow: 0 1rem 2rem #6ec2e3;
   }
 }

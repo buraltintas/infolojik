@@ -1,11 +1,12 @@
 .courses {
   position: relative;
   width: 100%;
-  height: 95vh;
+
   display: flex;
   justify-content: center;
   padding-right: 10%;
   padding-left: 10%;
+  padding-bottom: 20%;
   background: #bdc3c7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -17,8 +18,8 @@
     #2c3e50,
     #bdc3c7
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   color: rgb(236, 228, 228);
 }
 
@@ -57,7 +58,7 @@
 
 .aboutText {
   position: absolute;
-  top: 0;
+  top: 8rem;
   left: 50%;
   transform: translateX(-15%);
 
@@ -81,7 +82,7 @@
 }
 
 .coursesContainer {
-  margin-top: 18rem;
+  margin-top: 26rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,4 +167,11 @@
 .button:active {
   transform: translateY(0);
   box-shadow: 0 0.5rem 2rem rgba(110, 194, 227, 0.74);
+}
+
+@media (max-width: 40em) {
+  .coursesContainer {
+    flex-direction: column;
+    gap: 10rem;
+  }
 }

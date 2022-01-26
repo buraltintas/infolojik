@@ -89,7 +89,7 @@ const Footer = () => {
 
         <Map data-aos="fade-left" />
       </div>
-      <div data-aos="fade-up" className={styles.footer}>
+      <div className={styles.footer}>
         <p className={styles.copyright}>
           <strong>infolojik</strong> &copy; {year} | Tüm hakları saklıdır.
         </p>

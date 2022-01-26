@@ -24,3 +24,39 @@ body {
   background-color: rgb(189, 195, 199);
   /* box-shadow: inset 1rem 0.1rem 8rem black; */
 }
+
+@media (max-width: 107em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 85em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 85em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 68em) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media (max-width: 63em) {
+  html {
+    font-size: 34%;
+  }
+}
+
+@media (max-width: 61em) {
+  html {
+    font-size: 30%;
+  }
+}

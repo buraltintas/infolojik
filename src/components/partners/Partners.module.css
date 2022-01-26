@@ -57,7 +57,7 @@
 
 .aboutText {
   position: absolute;
-  top: 0;
+  top: 8rem;
   left: 50%;
   transform: translateX(-20%);
 
@@ -85,8 +85,9 @@
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  margin-top: 6rem;
   display: flex;
   gap: 6rem;
   align-items: center;

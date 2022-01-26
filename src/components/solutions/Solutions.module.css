@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: 95vh;
+
   display: flex;
   justify-content: center;
   padding-right: 10%;
@@ -57,7 +58,7 @@
 
 .aboutText {
   position: absolute;
-  top: 0;
+  top: 8rem;
   left: 50%;
   transform: translateX(-15%);
 
@@ -82,7 +83,8 @@
 
 .cards {
   padding: 6rem;
-  margin-top: 10rem;
+
+  margin-top: 16rem;
   display: flex;
   gap: 2rem;
   height: 60%;
@@ -90,7 +92,7 @@
 }
 
 .card {
-  width: 30%;
+  width: 50%;
   padding: 2rem;
   border: 1px solid rgba(110, 194, 227);
   border-top-left-radius: 1rem;
@@ -107,13 +109,6 @@
 
 .card:hover {
   transform: translateY(-1rem);
-  border-top-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  transform: skew(-6deg);
-}
-
-.card:hover > * {
-  transform: skew(6deg);
 }
 
 .cardHeader {
@@ -174,4 +169,33 @@
     ),
     url(./photo1.jpeg);
   background-size: cover;
+}
+
+@media (max-width: 54em) {
+  .cardText {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .cardText {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 36em) {
+  .cardText {
+    font-size: 1.3rem;
+  }
+  .cardHeader {
+    font-size: 1.8rem;
+  }
 }

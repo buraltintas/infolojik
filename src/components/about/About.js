@@ -3,7 +3,7 @@ import photo1 from "./photo1.jpeg";
 import photo2 from "./photo2.jpeg";
 import photo3 from "./photo3.jpeg";
 
-const About = () => {
+const About = (props) => {
   return (
     <section className={classes.about}>
       <div className={classes.image}>
@@ -43,7 +43,12 @@ const About = () => {
           görselleştirme ve raporlamasına kadar kesintisiz, verimli, doğru,
           zamanında ve hızlı çözümler yaratmaktadır.
         </p>
-        <button className={classes.button}>Neler Yapıyoruz?</button>
+        <button
+          onClick={() => props.scrollSolutions()}
+          className={classes.button}
+        >
+          Neler Yapıyoruz?
+        </button>
       </div>
     </section>
   );

@@ -1,21 +1,13 @@
 import logo from "../../logo.png";
 import classes from "./Header.module.css";
 
-const Header = () => {
+const Header = (props) => {
   const reloadPage = () => {
     window.location.reload();
   };
 
   return (
     <header className={classes.header}>
-      <div className={classes.logoBox}>
-        <img
-          src={logo}
-          alt="Logo"
-          className={classes.logo}
-          onClick={reloadPage}
-        />
-      </div>
       <div className={classes.textBox}>
         <h1 className={classes.headingPrimary}>
           <div className={classes.chart}>
@@ -63,7 +55,9 @@ const Header = () => {
           </p>
         </h1>
 
-        <button className={classes.button}>Keşfedin</button>
+        <button onClick={() => props.scrollAbout()} className={classes.button}>
+          Keşfedin
+        </button>
       </div>
     </header>
   );

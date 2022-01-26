@@ -1,1 +1,14 @@
+.logoBox {
+  position: fixed;
+  top: 5rem;
+  left: 5rem;
+  z-index: 999999999999999;
+}
 
+.logo {
+  height: 8rem;
+  animation: moveInLeft 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+  cursor: pointer;
+  z-index: 999999999999999;
+}

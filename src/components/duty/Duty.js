@@ -23,7 +23,7 @@ const Duty = () => {
       <div className={classes.services}>
         <div data-aos="fade-right" className={classes.container}>
           <div className={classes.imgDiv}>
-            <img src={photo1} alt="" className={classes.img} />
+            <img src={photo3} alt="" className={classes.img} />
           </div>
           <div className={classes.textRight}>
             <div className={classes.textContainer}>
@@ -48,12 +48,12 @@ const Duty = () => {
             </div>
           </div>
           <div className={classes.imgDivRight}>
-            <img src={photo2} alt="" className={classes.img} />
+            <img src={photo4} alt="" className={classes.img} />
           </div>
         </div>
         <div data-aos="fade-right" className={classes.container}>
           <div className={classes.imgDiv}>
-            <img src={photo3} alt="" className={classes.img} />
+            <img src={photo1} alt="" className={classes.img} />
           </div>
           <div className={classes.textRight}>
             <div className={classes.textContainer}>
@@ -78,7 +78,7 @@ const Duty = () => {
             </div>
           </div>
           <div className={classes.imgDivRight}>
-            <img src={photo4} alt="" className={classes.img} />
+            <img src={photo2} alt="" className={classes.img} />
           </div>
         </div>
       </div>

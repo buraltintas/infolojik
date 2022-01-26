@@ -16,7 +16,6 @@ const Footer = () => {
     <footer className={styles.sectionFooter}>
       <div className={styles.footerTop}>
         <div data-aos="fade-right" className={styles.footerLogo}>
-          <img src={logo} alt="Logo" className={styles.logo} />
           <div className={styles.email}>
             <div className={styles.iconDiv}>
               <svg

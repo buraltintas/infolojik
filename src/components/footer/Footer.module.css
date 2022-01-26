@@ -51,8 +51,9 @@
 .footerTop {
   height: 50rem;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   column-gap: 6rem;
   margin: 0 auto;
 }

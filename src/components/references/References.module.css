@@ -4,8 +4,8 @@
 
   display: flex;
   justify-content: center;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
   padding-bottom: 20%;
   background: #bdc3c7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -96,10 +96,8 @@
 }
 
 .logoContainer {
-  height: 26rem;
-  width: 30rem;
   padding: 1rem;
-  margin: 2rem;
+  margin: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,7 +112,12 @@
   transform: scale(1.03);
 }
 
-@media (max-width: 65em) {
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 96em) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }

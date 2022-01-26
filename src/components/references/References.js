@@ -27,34 +27,50 @@ const References = () => {
         </div>
         <div className={classes.grid}>
           <div className={classes.logoContainer}>
-            <img src={daikin} alt="logo of daikin" />
+            <img src={daikin} alt="logo of daikin" className={classes.logo} />
           </div>
           <div className={classes.logoContainer}>
-            <img src={macfit} alt="logo of macfit" />
+            <img src={macfit} alt="logo of macfit" className={classes.logo} />
           </div>
           <div className={classes.logoContainer}>
-            <img src={carrefoursa} alt="logo of carrefoursa" />
+            <img
+              src={carrefoursa}
+              alt="logo of carrefoursa"
+              className={classes.logo}
+            />
           </div>
           <div className={classes.logoContainer}>
-            <img src={epias} alt="logo of epias" />
+            <img src={epias} alt="logo of epias" className={classes.logo} />
           </div>
           <div className={classes.logoContainer}>
-            <img src={toyzzshop} alt="logo of toyzz shop" />
+            <img
+              src={toyzzshop}
+              alt="logo of toyzz shop"
+              className={classes.logo}
+            />
           </div>
           <div className={classes.logoContainer}>
-            <img src={zain} alt="logo of zain" />
+            <img src={zain} alt="logo of zain" className={classes.logo} />
           </div>
           <div className={classes.logoContainer}>
-            <img src={turkcell} alt="logo of turkcell" />
+            <img
+              src={turkcell}
+              alt="logo of turkcell"
+              className={classes.logo}
+            />
           </div>
           <div className={classes.logoContainer}>
-            <img src={teb} alt="logo of teb" />
+            <img src={teb} alt="logo of teb" className={classes.logo} />
           </div>
           <div className={classes.logoContainer}>
-            <img src={clk} alt="logo of clk enerji" />
+            <img src={clk} alt="logo of clk enerji" className={classes.logo} />
           </div>
           <div className={classes.logoContainer}>
-            <img src={turktelekom} alt="logo of turk telekom" />
+            <img
+              src={turktelekom}
+              alt="logo of turk telekom"
+              className={classes.logo}
+            />
           </div>
         </div>
       </div>

@@ -93,18 +93,13 @@
 
 .card {
   width: 50%;
+  height: 100%;
   padding: 2rem;
   border: 1px solid rgba(110, 194, 227);
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-
-  height: 30rem;
   transition: all 0.3s;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.596);
-}
-
-.card > * {
-  transition: all 0.3s;
 }
 
 .card:hover {
@@ -131,7 +126,7 @@
 
 .cardText {
   margin-top: 3.6rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .card1 {
@@ -171,12 +166,6 @@
   background-size: cover;
 }
 
-@media (max-width: 54em) {
-  .cardText {
-    font-size: 1.4rem;
-  }
-}
-
 @media (max-width: 50em) {
   .cards {
     display: grid;
@@ -186,14 +175,11 @@
   .card {
     width: 100%;
   }
-  .cardText {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 36em) {
   .cardText {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   .cardHeader {
     font-size: 1.8rem;

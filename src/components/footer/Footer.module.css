@@ -1,5 +1,5 @@
 .sectionFooter {
-  width: 100%;
+  width: 100vw;
 
   display: flex;
   justify-content: center;
@@ -50,7 +50,7 @@
 
 .footerTop {
   height: 50rem;
-  width: 80%;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 6rem;
@@ -104,7 +104,7 @@
   display: block;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 96em) {
   .footerTop {
     display: flex;
     flex-direction: column;

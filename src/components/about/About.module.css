@@ -4,8 +4,8 @@
 
   display: flex;
 
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
   padding-bottom: 20%;
   gap: 3rem;
 
@@ -30,11 +30,11 @@
 
 .image {
   position: relative;
-  width: 50%;
+  width: 45%;
 }
 
 .photo {
-  width: 60%;
+  width: 50%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.514);
   border-radius: 0.5rem;
   position: absolute;

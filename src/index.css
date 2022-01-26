@@ -8,56 +8,33 @@
 
 html {
   font-size: 62.5%;
-  width: 100vw;
+  width: 100%;
 }
 
 body {
   padding: 0;
   margin: 0;
+  width: 100vw;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-
   color: rgb(122, 122, 122);
   background-color: rgb(189, 195, 199);
-  /* box-shadow: inset 1rem 0.1rem 8rem black; */
+
+  overflow-x: hidden;
 }
 
-@media (max-width: 107em) {
+@media (max-width: 75em) {
   html {
     font-size: 50%;
   }
 }
 
-@media (max-width: 85em) {
+@media (max-width: 57em) {
   html {
     font-size: 45%;
-  }
-}
-
-@media (max-width: 85em) {
-  html {
-    font-size: 40%;
-  }
-}
-
-@media (max-width: 68em) {
-  html {
-    font-size: 35%;
-  }
-}
-
-@media (max-width: 63em) {
-  html {
-    font-size: 34%;
-  }
-}
-
-@media (max-width: 61em) {
-  html {
-    font-size: 30%;
   }
 }

@@ -6,23 +6,6 @@ import photo3 from "./photo3.jpeg";
 const About = (props) => {
   return (
     <section className={classes.about}>
-      <div className={classes.image}>
-        <img
-          src={photo1}
-          alt="chart"
-          className={`${classes.photo} ${classes.photo1}`}
-        />
-        <img
-          src={photo3}
-          alt="laptop"
-          className={`${classes.photo} ${classes.photo2}`}
-        />
-        <img
-          src={photo2}
-          alt="desks in office"
-          className={`${classes.photo} ${classes.photo3}`}
-        />
-      </div>
       <div className={classes.aboutText}>
         <h2 className={classes.aboutUs}>
           <div className={classes.dash}>&nbsp;</div>{" "}
@@ -49,6 +32,23 @@ const About = (props) => {
         >
           Neler Yapıyoruz?
         </button>
+      </div>
+      <div className={classes.image}>
+        <img
+          src={photo1}
+          alt="chart"
+          className={`${classes.photo} ${classes.photo1}`}
+        />
+        <img
+          src={photo3}
+          alt="laptop"
+          className={`${classes.photo} ${classes.photo2}`}
+        />
+        <img
+          src={photo2}
+          alt="desks in office"
+          className={`${classes.photo} ${classes.photo3}`}
+        />
       </div>
     </section>
   );

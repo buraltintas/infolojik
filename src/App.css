@@ -5,6 +5,11 @@
   z-index: 999999999999999;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  width: 10rem;
+}
+
+.logo {
+  width: 10rem;
 }
 
 .navigation {
@@ -156,11 +161,17 @@
   .navigation__list {
     right: -20%;
   }
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(8);
+  }
 }
 
 @media (max-width: 38em) {
   .navigation__list {
     right: -10%;
+  }
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(7);
   }
 }
 
@@ -168,10 +179,16 @@
   .navigation__list {
     right: -5%;
   }
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(6);
+  }
 }
 
 @media (max-width: 26em) {
   .navigation__list {
     right: 5%;
+  }
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(5);
   }
 }

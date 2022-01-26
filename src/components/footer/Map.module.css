@@ -3,6 +3,11 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.conatiner {
+  width: 70%;
 }
 
 .mapContainer {
@@ -12,6 +17,8 @@
   margin: 1rem !important;
 }
 
-.logo {
-  width: 12rem;
+@media (max-width: 63em) {
+  .map {
+    width: 70%;
+  }
 }

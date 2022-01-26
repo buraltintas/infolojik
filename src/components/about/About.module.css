@@ -154,3 +154,13 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 55em) {
+  .aboutText h1 {
+    font-size: 2.4rem;
+  }
+
+  .aboutText p {
+    font-size: 1.4rem;
+  }
+}

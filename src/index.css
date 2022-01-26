@@ -8,7 +8,6 @@
 
 html {
   font-size: 62.5%;
-  width: 100%;
 }
 
 body {
@@ -27,32 +26,26 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 63em) {
   html {
-    font-size: 40%;
+    font-size: 55%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 56.25em) {
   html {
     font-size: 50%;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 37.5em) {
   html {
-    font-size: 60%;
+    font-size: 40%;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 25em) {
   html {
-    font-size: 70%;
-  }
-}
-
-@media (min-width: 1800px) {
-  html {
-    font-size: 80%;
+    font-size: 30%;
   }
 }

@@ -128,3 +128,18 @@
 .logo2 {
   width: 18rem;
 }
+
+@media (max-width: 55em) {
+  .container {
+    flex-direction: column;
+  }
+
+  .text {
+    flex-direction: column;
+  }
+
+  .text p {
+    border-right: none;
+    font-size: 1.4rem;
+  }
+}

@@ -11,4 +11,6 @@
   animation-fill-mode: backwards;
   cursor: pointer;
   z-index: 999999999999999;
+  width: 40%;
+  height: auto;
 }

@@ -1,17 +1,3 @@
-.logoBox {
-  position: fixed;
-  top: 5rem;
-  left: 5rem;
-  z-index: 999999999999999;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  width: 10rem;
-}
-
-.logo {
-  width: 10rem;
-}
-
 .navigation {
   z-index: 999999999999999;
 }

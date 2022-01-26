@@ -1,11 +1,13 @@
 .partners {
   position: relative;
   width: 100vw;
-  height: 95vh;
+
   display: flex;
   justify-content: center;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 3%;
+  padding-left: 3%;
+
+  padding-bottom: 15%;
   background: #bdc3c7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -17,8 +19,8 @@
     #2c3e50,
     #bdc3c7
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   color: rgb(236, 228, 228);
 }
 
@@ -59,19 +61,19 @@
   position: absolute;
   top: 8rem;
   left: 50%;
-  transform: translateX(-20%);
+  transform: translateX(-50%);
 
   display: flex;
   flex-direction: column;
 
   gap: 1.5rem;
   padding: 2rem;
-  width: 50%;
+
   hyphens: auto;
 }
 
 .aboutText h1 {
-  font-size: 4rem;
+  font-size: 3.4rem;
   text-shadow: 1rem 0.75rem 4rem rgba(0, 0, 0, 0.7);
 }
 
@@ -89,7 +91,7 @@
   margin: 0 auto;
   margin-top: 6rem;
   display: flex;
-  gap: 6rem;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
 }

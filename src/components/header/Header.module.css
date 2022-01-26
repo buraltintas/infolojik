@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  height: 95vh;
+  height: 100vh;
   width: 100vw;
 
   background-image: linear-gradient(
@@ -12,8 +12,8 @@
 
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   backface-visibility: hidden;
@@ -30,6 +30,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 2rem;
+  padding-top: 5%;
 }
 
 .headingPrimary {

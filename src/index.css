@@ -27,14 +27,32 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 400px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 600px) {
   html {
     font-size: 50%;
   }
 }
 
-@media (max-width: 57em) {
+@media (max-width: 900px) {
   html {
-    font-size: 45%;
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 80%;
   }
 }

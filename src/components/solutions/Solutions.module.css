@@ -1,12 +1,12 @@
 .solutions {
   position: relative;
   width: 100vw;
-  height: 95vh;
 
   display: flex;
   justify-content: center;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-bottom: 10%;
   background: #bdc3c7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -18,8 +18,8 @@
     #2c3e50,
     #bdc3c7
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   color: rgb(236, 228, 228);
 }
 
@@ -60,14 +60,14 @@
   position: absolute;
   top: 8rem;
   left: 50%;
-  transform: translateX(-15%);
+  transform: translateX(-50%);
 
   display: flex;
   flex-direction: column;
 
   gap: 1.5rem;
   padding: 2rem;
-  width: 50%;
+
   hyphens: auto;
 }
 
@@ -92,8 +92,6 @@
 }
 
 .card {
-  width: 50%;
-  height: 100%;
   padding: 2rem;
   border: 1px solid rgba(110, 194, 227);
   border-top-left-radius: 1rem;
@@ -108,7 +106,7 @@
 
 .cardHeader {
   display: block;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .cardTop {
@@ -166,7 +164,7 @@
   background-size: cover;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 62em) {
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;

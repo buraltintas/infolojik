@@ -1,5 +1,4 @@
 .about {
-  padding-top: 10vh;
   width: 100vw;
 
   display: flex;
@@ -29,6 +28,7 @@
 }
 
 .image {
+  display: block;
   position: relative;
   width: 45%;
 }
@@ -141,4 +141,16 @@
 .button:active {
   transform: translateY(0);
   box-shadow: 0 0.5rem 2rem rgba(110, 194, 227, 0.74);
+}
+
+@media (max-width: 60em) {
+  .image {
+    display: none;
+    opacity: 0;
+  }
+
+  .about {
+    align-items: center;
+    justify-content: center;
+  }
 }

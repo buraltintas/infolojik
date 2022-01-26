@@ -1,12 +1,14 @@
 import classes from "./Map.module.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import logo from "../../logo.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Map = () => {
-  const position = [40.994397914530765, 29.06356160848624];
+  const position = [40.9931462081776, 29.067158102897583];
 
   return (
-    <div className={classes.map}>
+    <div data-aos="fade-left" className={classes.map}>
       <MapContainer
         style={{ width: "58rem", height: "38rem" }}
         center={position}
@@ -22,7 +24,7 @@ const Map = () => {
           <Popup>
             <h2>
               Yol tarifi için{" "}
-              <a target="_blank" href="https://goo.gl/maps/cXrxggLkdfQukMQf6">
+              <a target="_blank" href="https://goo.gl/maps/FwU2gnWworE8BgEN8">
                 tıklayınız.
               </a>
             </h2>

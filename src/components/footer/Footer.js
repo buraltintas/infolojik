@@ -4,15 +4,16 @@ import "./Footerlogo.css";
 import logo from "../../logo.png";
 import Map from "./Map";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
   const year = new Date().getFullYear();
-  const position = [40.994397914530765, 29.06356160848624];
 
   return (
     <footer className={styles.sectionFooter}>
       <div className={styles.footerTop}>
-        <div className={styles.footerLogo}>
+        <div data-aos="fade-right" className={styles.footerLogo}>
           <img src={logo} alt="Logo" className={styles.logo} />
           <div className={styles.email}>
             <div className={styles.iconDiv}>
@@ -79,15 +80,16 @@ const Footer = () => {
               </svg>
             </div>
             <p>
-              Dumlupınar Mh. Gümüşdere Çıkmazı Sk. A Blok Apt. No: 1A/23
-              Kadıköy/İstanbul
+              Merdivenköy Mah. Nur Sok. No:1/1 B Blok Kat:15
+              <br />
+              34732 Kadıköy/İstanbul
             </p>
           </div>
         </div>
 
-        <Map />
+        <Map data-aos="fade-left" />
       </div>
-      <div className={styles.footer}>
+      <div data-aos="fade-up" className={styles.footer}>
         <p className={styles.copyright}>
           <strong>infolojik</strong> &copy; {year} | Tüm hakları saklıdır.
         </p>

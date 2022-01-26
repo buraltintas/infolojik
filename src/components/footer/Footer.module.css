@@ -72,7 +72,7 @@
 .email {
   margin-top: 4rem;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   height: 1rem;
   align-items: center;
 }
@@ -85,7 +85,7 @@
 .adress {
   margin-top: 4rem;
   display: flex;
-  gap: 4rem;
+  gap: 3rem;
   height: 2rem;
   width: 60rem;
   align-items: center;

@@ -43,7 +43,7 @@ const About = () => {
           görselleştirme ve raporlamasına kadar kesintisiz, verimli, doğru,
           zamanında ve hızlı çözümler yaratmaktadır.
         </p>
-        <button className={classes.button}>Keşfedin</button>
+        <button className={classes.button}>Neler Yapıyoruz?</button>
       </div>
     </section>
   );

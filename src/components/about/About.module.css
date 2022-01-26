@@ -118,8 +118,8 @@
 }
 
 .button {
-  width: 14rem;
-  padding: 1.5rem 3rem;
+  width: 25rem;
+  padding: 1rem 0.5rem;
   border-radius: 2rem;
   transition: all 200ms;
   font-size: 2rem;

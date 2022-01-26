@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import classes from "./Map.module.css";
 import "./Footerlogo.css";
 import logo from "../../logo.png";
 import Map from "./Map";
@@ -9,6 +10,7 @@ import "aos/dist/aos.css";
 
 const Footer = () => {
   const year = new Date().getFullYear();
+  const position = [40.9931462081776, 29.067158102897583];
 
   return (
     <footer className={styles.sectionFooter}>
@@ -87,7 +89,28 @@ const Footer = () => {
           </div>
         </div>
 
-        <Map data-aos="fade-left" />
+        <MapContainer
+          style={{ width: "35rem", height: "35rem" }}
+          center={position}
+          zoom={16}
+          scrollWheelZoom={true}
+          className={classes.mapContainer}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={position}>
+            <Popup>
+              <h2>
+                Yol tarifi için{" "}
+                <a target="_blank" href="https://goo.gl/maps/FwU2gnWworE8BgEN8">
+                  tıklayınız.
+                </a>
+              </h2>
+            </Popup>
+          </Marker>
+        </MapContainer>
       </div>
       <div className={styles.footer}>
         <p className={styles.copyright}>

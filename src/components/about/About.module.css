@@ -6,6 +6,7 @@
   padding-right: 5%;
   padding-left: 5%;
   padding-bottom: 20%;
+  padding-top: 10%;
   gap: 3rem;
 
   background: #bdc3c7; /* fallback for old browsers */
@@ -22,8 +23,8 @@
 
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
   color: rgb(236, 228, 228);
   z-index: -1;
 }

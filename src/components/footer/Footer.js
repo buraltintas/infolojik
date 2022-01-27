@@ -2,8 +2,6 @@ import React from "react";
 import styles from "./Footer.module.css";
 import classes from "./Map.module.css";
 import "./Footerlogo.css";
-import logo from "../../logo.png";
-import Map from "./Map";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import Aos from "aos";
 import "aos/dist/aos.css";

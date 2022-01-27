@@ -60,6 +60,8 @@ function App() {
   const scrollAbout = () => {
     about.current.scrollIntoView({
       behavior: "smooth",
+      block: "start",
+      inline: "nearest",
     });
     setMenuOpen(false);
   };

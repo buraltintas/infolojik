@@ -51,6 +51,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footerLogo {
+  width: 60%;
+  margin: 0 auto;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
 }
 
 .email {
@@ -76,7 +87,7 @@
 }
 
 .iconDiv {
-  width: 6rem;
+  width: 4rem;
 }
 
 .adress p {

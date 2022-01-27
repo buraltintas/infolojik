@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className={styles.sectionFooter}>
       <div className={styles.footerTop}>
-        <div data-aos="fade-right" className={styles.footerLogo}>
+        <div className={styles.footerLogo}>
           <div className={styles.email}>
             <svg
               className={styles.icon}
@@ -43,7 +43,6 @@ const Footer = () => {
                 strokeWidth="16"
               ></polyline>
             </svg>
-
             <p>info@infolojik.com</p>
           </div>
           <div className={styles.adress}>
@@ -76,7 +75,6 @@ const Footer = () => {
                 strokeWidth="16"
               ></path>
             </svg>
-
             <p>
               Merdivenköy Mah. Nur Sok. No:1/1 B Blok Kat:15
               <br />
@@ -86,7 +84,7 @@ const Footer = () => {
         </div>
 
         <MapContainer
-          style={{ width: "25rem", height: "25rem" }}
+          style={{ width: "40rem", height: "25rem" }}
           center={position}
           zoom={16}
           scrollWheelZoom={true}

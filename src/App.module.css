@@ -16,18 +16,20 @@
 }
 
 .logo {
-  height: 8rem;
   animation: moveInLeft 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
   cursor: pointer;
-
   width: 40%;
   height: auto;
 }
 
 .navIcon {
-  height: 6rem;
-  width: 6rem;
+  height: 7rem;
+  width: 7rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2000rem;
+  border: 0.3rem solid rgba(110, 194, 227, 0.692);
+  padding: 0.6rem;
   cursor: pointer;
 }
 
@@ -38,11 +40,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  border-radius: 2rem;
-  border: 0.4rem solid rgba(110, 194, 227, 0.692);
 
-  transition: all 0.3s;
+  border-radius: 2000rem;
 }
 
 .sideMenu {

@@ -2,8 +2,8 @@
   max-width: 100%;
   display: flex;
   justify-content: center;
-  padding-right: 3%;
-  padding-left: 3%;
+  padding-right: 1rem;
+  padding-left: 1rem;
   background: #bdc3c7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,

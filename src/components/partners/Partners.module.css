@@ -10,7 +10,7 @@
   padding-left: 1%;
 
   padding-bottom: 20%;
-  padding-top: 3%;
+  padding-top: 5%;
   background: #bdc3c7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -52,10 +52,6 @@
   50% {
     border-color: transparent;
   }
-}
-
-.partnersContainer {
-  margin-top: 16rem;
 }
 
 .container {

@@ -23,69 +23,38 @@
   color: rgb(236, 228, 228);
 }
 
-.dash {
-  width: 4rem;
-  height: 0.2rem;
-  background-color: rgb(110, 193, 227);
+.typingHeading {
+  width: 14ch;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+
+  font-size: 4rem;
+  animation: typing 2s steps(23), blink 0.5s step-end infinite alternate;
+  border-right: 3px solid;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  color: rgb(122, 122, 122);
+  text-shadow: 1px 2px 6px rgba(110, 194, 227, 0.74), 0 0 0 #000,
+    1px 2px 6px rgba(110, 194, 227, 0.74);
 }
 
-.aboutUs {
-  display: flex;
-  align-items: center;
-
-  gap: 1.8rem;
-  margin-bottom: -2rem;
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
 
-.aboutUsText {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 2rem;
-}
-
-.aboutUsText h4 {
-  margin-top: 0.3rem;
-  color: rgb(255, 204, 0);
-  letter-spacing: 0.2rem;
-  font-weight: 700;
-  letter-spacing: 0.3rem;
-  font-size: 1.2rem;
-}
-
-.aboutUsText h3 {
-  color: rgb(110, 193, 227);
-}
-
-.aboutText {
-  position: absolute;
-  top: 8rem;
-  left: 50%;
-  transform: translateX(-50%);
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 1.5rem;
-  padding: 2rem;
-
-  hyphens: auto;
-}
-
-.aboutText h1 {
-  font-size: 2rem;
-  text-shadow: 1rem 0.75rem 4rem rgba(0, 0, 0, 0.7);
-}
-
-.aboutText p {
-  font-size: 1.8rem;
-  line-height: 2;
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .grid {
   margin: 0 auto;
   width: 90%;
-  margin-top: 18rem;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding-left: 2rem;

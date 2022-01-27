@@ -6,17 +6,7 @@ const Partners = () => {
   return (
     <section className={classes.partners}>
       <div className={classes.partnersContainer}>
-        <div className={classes.aboutText}>
-          <h2 className={classes.aboutUs}>
-            <div className={classes.dash}>&nbsp;</div>{" "}
-            <div className={classes.aboutUsText}>
-              <h3>[</h3>
-              <h4>&nbsp; BİRLİKTE ÇALIŞTIĞIMIZ &nbsp;</h4>
-              <h3>]</h3>
-            </div>
-          </h2>
-          <h1>Çözüm Ortaklarımız</h1>
-        </div>
+        <div className={classes.typingHeading}>Çözüm Ortaklarımız </div>
         <div className={classes.container}>
           <div className={classes.logos}>
             <img

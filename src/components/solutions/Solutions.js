@@ -3,17 +3,7 @@ import classes from "./Solutions.module.css";
 const Solutions = () => {
   return (
     <section className={classes.solutions}>
-      <div className={classes.aboutText}>
-        <h2 className={classes.aboutUs}>
-          <div className={classes.dash}>&nbsp;</div>{" "}
-          <div className={classes.aboutUsText}>
-            <h3>[</h3>
-            <h4>&nbsp; SİZE ÖZEL &nbsp;</h4>
-            <h3>]</h3>
-          </div>
-        </h2>
-        <h1>Çözümlerimiz</h1>
-      </div>
+      <div className={classes.typingHeading}>Çözümlerimiz </div>
       <div className={classes.cards}>
         <div className={`${classes.card} ${classes.card1}`}>
           <div className={classes.cardTop}>

@@ -1,21 +1,16 @@
+import { useState } from "react";
 import classes from "./About.module.css";
 import photo1 from "./photo1.jpeg";
 import photo2 from "./photo2.jpeg";
 import photo3 from "./photo3.jpeg";
 
 const About = (props) => {
+  const [isTyping, setIsTyping] = useState(false);
+
   return (
     <section className={classes.about}>
       <div className={classes.aboutText}>
-        <h2 className={classes.aboutUs}>
-          <div className={classes.dash}>&nbsp;</div>{" "}
-          <div className={classes.aboutUsText}>
-            <h3>[</h3>
-            <h4>&nbsp; BİZE DAİR &nbsp;</h4>
-            <h3>]</h3>
-          </div>
-        </h2>
-        <h1>Hakkımızda</h1>
+        <div className={classes.typingHeading}>Hakkımızda </div>
         <p>
           <strong>infolojik</strong>, 2017 yılında Veri Ambarı, İş Zekası ve
           Büyük Veri projelerini gerçekleştirmek üzere kurulmuş bilgi

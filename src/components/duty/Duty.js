@@ -9,17 +9,7 @@ import "aos/dist/aos.css";
 const Duty = () => {
   return (
     <section className={classes.duty}>
-      <div className={classes.aboutText}>
-        <h2 className={classes.aboutUs}>
-          <div className={classes.dash}>&nbsp;</div>{" "}
-          <div className={classes.aboutUsText}>
-            <h3>[</h3>
-            <h4>&nbsp; UZMAN KADROMUZLA &nbsp;</h4>
-            <h3>]</h3>
-          </div>
-        </h2>
-        <h1>Hizmetlerimiz</h1>
-      </div>
+      <div className={classes.typingHeading}>Hizmetlerimiz </div>
       <div className={classes.services}>
         <div data-aos="fade-right" className={classes.container}>
           <div className={classes.imgDiv}>

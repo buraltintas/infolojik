@@ -14,17 +14,7 @@ const References = () => {
   return (
     <section className={classes.references}>
       <div>
-        <div className={classes.aboutText}>
-          <h2 className={classes.aboutUs}>
-            <div className={classes.dash}>&nbsp;</div>{" "}
-            <div className={classes.aboutUsText}>
-              <h3>[</h3>
-              <h4>&nbsp; BAŞARI HİKAYELERİMİZ &nbsp;</h4>
-              <h3>]</h3>
-            </div>
-          </h2>
-          <h1>Referanslarımız</h1>
-        </div>
+        <div className={classes.typingHeading}>Referanslarımız </div>
         <div className={classes.grid}>
           <div className={classes.logoContainer}>
             <img src={daikin} alt="logo of daikin" className={classes.logo} />

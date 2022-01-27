@@ -83,7 +83,7 @@ const Footer = () => {
 
         <div className={classes.map}>
           <MapContainer
-            style={{ width: "58rem", height: "38rem" }}
+            style={{ width: "25rem", height: "20rem" }}
             center={position}
             zoom={15}
             scrollWheelZoom={true}

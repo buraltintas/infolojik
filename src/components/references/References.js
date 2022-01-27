@@ -13,55 +13,27 @@ import zain from "./zain-group-logo.png";
 const References = () => {
   return (
     <section className={classes.references}>
-      <div>
-        <div className={classes.typingHeading}>Referanslarımız </div>
-        <div className={classes.grid}>
-          <div className={classes.logoContainer}>
-            <img src={daikin} alt="logo of daikin" className={classes.logo} />
-          </div>
-          <div className={classes.logoContainer}>
-            <img src={macfit} alt="logo of macfit" className={classes.logo} />
-          </div>
-          <div className={classes.logoContainer}>
-            <img
-              src={carrefoursa}
-              alt="logo of carrefoursa"
-              className={classes.logo}
-            />
-          </div>
-          <div className={classes.logoContainer}>
-            <img src={epias} alt="logo of epias" className={classes.logo} />
-          </div>
-          <div className={classes.logoContainer}>
-            <img
-              src={toyzzshop}
-              alt="logo of toyzz shop"
-              className={classes.logo}
-            />
-          </div>
-          <div className={classes.logoContainer}>
-            <img src={zain} alt="logo of zain" className={classes.logo} />
-          </div>
-          <div className={classes.logoContainer}>
-            <img
-              src={turkcell}
-              alt="logo of turkcell"
-              className={classes.logo}
-            />
-          </div>
-          <div className={classes.logoContainer}>
-            <img src={teb} alt="logo of teb" className={classes.logo} />
-          </div>
-          <div className={classes.logoContainer}>
-            <img src={clk} alt="logo of clk enerji" className={classes.logo} />
-          </div>
-          <div className={classes.logoContainer}>
-            <img
-              src={turktelekom}
-              alt="logo of turk telekom"
-              className={classes.logo}
-            />
-          </div>
+      <div className={classes.typingHeading}>Referanslarımız </div>
+      <div className={classes.container}>
+        <div className={classes.reference}>
+          <div className={classes.img1}></div>
+          <div className={classes.img2}></div>
+        </div>
+        <div className={classes.reference}>
+          <div className={classes.img3}></div>
+          <div className={classes.img4}></div>
+        </div>
+        <div className={classes.reference}>
+          <div className={classes.img5}></div>
+          <div className={classes.img6}></div>
+        </div>
+        <div className={classes.reference}>
+          <div className={classes.img7}></div>
+          <div className={classes.img8}></div>
+        </div>
+        <div className={classes.reference}>
+          <div className={classes.img9}></div>
+          <div className={classes.img10}></div>
         </div>
       </div>
     </section>

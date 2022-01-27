@@ -1,10 +1,9 @@
 .sectionFooter {
   width: 100%;
-
   display: flex;
   justify-content: center;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 3%;
+  padding-left: 3%;
   background: #bdc3c7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -25,9 +24,9 @@
 
 .footer {
   display: flex;
-  width: 90%;
+  width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: Readex Pro, sans-serif;
 
   margin-bottom: 5rem;

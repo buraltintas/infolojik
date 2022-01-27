@@ -25,7 +25,7 @@ const Duty = () => {
           <div className={classes.imgDiv}>
             <img src={photo3} alt="" className={classes.img} />
           </div>
-          <div className={classes.textRight}>
+          <div className={classes.text}>
             <div className={classes.textContainer}>
               <h1>Danışmanlık</h1>
 
@@ -37,8 +37,11 @@ const Duty = () => {
           </div>
         </div>
         <div data-aos="fade-left" className={classes.container}>
-          <div className={classes.textLeft}>
-            <div className={classes.textContainerLeft}>
+          <div className={classes.imgDiv}>
+            <img src={photo4} alt="" className={classes.img} />
+          </div>
+          <div className={classes.text}>
+            <div className={classes.textContainer}>
               <h1>Dış Kaynak</h1>
 
               <p>
@@ -47,15 +50,12 @@ const Duty = () => {
               </p>
             </div>
           </div>
-          <div className={classes.imgDivRight}>
-            <img src={photo4} alt="" className={classes.img} />
-          </div>
         </div>
         <div data-aos="fade-right" className={classes.container}>
           <div className={classes.imgDiv}>
             <img src={photo1} alt="" className={classes.img} />
           </div>
-          <div className={classes.textRight}>
+          <div className={classes.text}>
             <div className={classes.textContainer}>
               <h1>Eğitim</h1>
 
@@ -67,8 +67,11 @@ const Duty = () => {
           </div>
         </div>
         <div data-aos="fade-left" className={classes.container}>
-          <div className={classes.textLeft}>
-            <div className={classes.textContainerLeft}>
+          <div className={classes.imgDiv}>
+            <img src={photo2} alt="" className={classes.img} />
+          </div>
+          <div className={classes.text}>
+            <div className={classes.textContainer}>
               <h1>Bakım&Destek</h1>
 
               <p>
@@ -76,9 +79,6 @@ const Duty = () => {
                 duyulacak teknik veya operasyonel destek hizmetimizdir.
               </p>
             </div>
-          </div>
-          <div className={classes.imgDivRight}>
-            <img src={photo2} alt="" className={classes.img} />
           </div>
         </div>
       </div>

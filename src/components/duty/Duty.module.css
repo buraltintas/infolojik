@@ -82,57 +82,46 @@
 }
 
 .services {
-  margin-top: 22rem;
+  margin-top: 30rem;
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 6rem;
 }
 
 .container {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container h1 {
   margin-bottom: 1rem;
-  font-size: 3.4rem;
+  font-size: 3rem;
 }
 
 .imgDiv {
-  width: 50%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
 .img {
-  width: 60%;
+  width: 30rem;
   border-radius: 2rem;
   background: #e0e0e0;
   box-shadow: 1rem 1rem 3rem rgba(190, 190, 190, 0.363),
     -1rem -1rem 3rem rgba(0, 0, 0, 0.301);
 }
 
-.imgDivRight {
-  width: 50%;
-  display: flex;
-  align-items: center;
-}
-
-.textRight {
-  position: relative;
-  width: 40%;
-}
-
 .textContainer {
-  position: absolute;
   border: 0.2rem solid rgb(110, 193, 227);
-  width: 100%;
-  top: 50%;
-  left: -20%;
-  transform: translateY(-50%);
   padding: 2rem;
-
+  width: 80%;
+  transform: translateX(-5%);
   border-radius: 3rem;
   background: linear-gradient(145deg, hsla(0, 0%, 94%, 0.9), #cacaca);
   box-shadow: 1rem 1rem 3rem rgba(190, 190, 190, 0.363),
@@ -141,65 +130,8 @@
   font-size: 2rem;
 }
 
-.textLeft {
-  position: relative;
-  width: 40%;
-}
-
-.textContainerLeft {
-  position: absolute;
-  border: 0.2rem solid rgb(110, 193, 227);
-  width: 100%;
-  top: 50%;
-  right: -20%;
-  transform: translateY(-50%);
-  padding: 2rem;
-  border-radius: 3rem;
-  background: linear-gradient(145deg, hsla(0, 0%, 94%, 0.9), #cacaca);
-  box-shadow: 1rem 1rem 3rem rgba(190, 190, 190, 0.548),
-    -1rem -1rem 3rem rgba(0, 0, 0, 0.301);
-  color: rgb(122, 122, 122);
-  font-size: 2rem;
-}
-
-@media (max-width: 55em) {
-  .container h1 {
-    font-size: 2.4rem;
-  }
-
-  .textContainer,
-  .textContainerLeft {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 37em) {
-  .textLeft {
-    width: 60%;
-  }
-
-  .textRight {
-    width: 60%;
-  }
-
-  .img {
-    width: 80%;
-  }
-}
-
-@media (max-width: 25em) {
-  .textLeft {
-    width: 60%;
-  }
-
-  .textRight {
-    width: 60%;
-  }
-
-  .img {
-    width: 80%;
-  }
-  .services {
-    gap: 12rem;
+@media (max-width: 400px) {
+  .container {
+    flex-direction: column;
   }
 }

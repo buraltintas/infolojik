@@ -18,17 +18,6 @@ const Partners = () => {
           <h1>Çözüm Ortaklarımız</h1>
         </div>
         <div className={classes.container}>
-          <div className={classes.text}>
-            <p>
-              <strong>infolojik</strong> olarak yakın zamanda Microsoft partneri
-              olduk ve bu alanda da aynı vizyonla hizmet vermeye başladık.
-            </p>
-
-            <p>
-              Aynı zamanda Koç Digital ile alt yüklenici olarak çeşitli
-              projelerde yakın ilişki içerisinde çalışıyoruz.
-            </p>
-          </div>
           <div className={classes.logos}>
             <img
               src={microsoft}
@@ -40,6 +29,17 @@ const Partners = () => {
               alt="Logo of Microsoft"
               className={classes.logo2}
             />
+          </div>
+          <div className={classes.text}>
+            <p>
+              <strong>infolojik</strong> olarak yakın zamanda Microsoft partneri
+              olduk ve bu alanda da aynı vizyonla hizmet vermeye başladık.
+            </p>
+
+            <p>
+              Aynı zamanda Koç Digital ile alt yüklenici olarak çeşitli
+              projelerde yakın ilişki içerisinde çalışıyoruz.
+            </p>
           </div>
         </div>
       </div>

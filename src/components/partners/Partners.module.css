@@ -91,42 +91,44 @@
   margin: 0 auto;
   margin-top: 6rem;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
 }
 
 .text {
   width: 60%;
-  font-size: 2.5rem;
+  font-size: 3rem;
   display: flex;
   gap: 2rem;
   hyphens: auto;
 }
 
 .text strong {
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 0.2rem;
 }
 
 .text p {
   padding: 2rem;
+}
+
+.text p:first-child {
   border-right: 1px solid rgba(110, 194, 227);
 }
 
 .logos {
-  width: 20%;
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
 .logo1 {
-  width: 18rem;
+  width: 24rem;
 }
 
 .logo2 {
-  width: 18rem;
+  width: 24rem;
 }
 
 @media (max-width: 55em) {
@@ -139,7 +141,10 @@
   }
 
   .text p {
-    border-right: none;
-    font-size: 1.4rem;
+    font-size: 2.2rem;
+  }
+
+  .text p:first-child {
+    border: none;
   }
 }

@@ -16,6 +16,6 @@
 
 @media (max-width: 96em) {
   .map {
-    transform: translateX(-40%);
+    transform: translateX(-30%);
   }
 }

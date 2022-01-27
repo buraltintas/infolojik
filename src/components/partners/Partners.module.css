@@ -1,11 +1,11 @@
 .partners {
   position: relative;
-  width: 100vw;
+  width: 100%;
 
   display: flex;
   justify-content: center;
-  padding-right: 3%;
-  padding-left: 3%;
+  padding-right: 1%;
+  padding-left: 1%;
 
   padding-bottom: 20%;
   background: #bdc3c7; /* fallback for old browsers */

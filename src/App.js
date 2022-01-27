@@ -54,48 +54,56 @@ function App() {
       left: 0,
       behavior: "smooth",
     });
+    setMenuOpen(false);
   };
 
   const scrollAbout = () => {
     about.current.scrollIntoView({
       behavior: "smooth",
     });
+    setMenuOpen(false);
   };
 
   const scrollSolutions = () => {
     solutions.current.scrollIntoView({
       behavior: "smooth",
     });
+    setMenuOpen(false);
   };
 
   const scrollDuty = () => {
     duty.current.scrollIntoView({
       behavior: "smooth",
     });
+    setMenuOpen(false);
   };
 
   const scrollPartners = () => {
     partners.current.scrollIntoView({
       behavior: "smooth",
     });
+    setMenuOpen(false);
   };
 
   const scrollReferences = () => {
     references.current.scrollIntoView({
       behavior: "smooth",
     });
+    setMenuOpen(false);
   };
 
   const scrollCourses = () => {
     courses.current.scrollIntoView({
       behavior: "smooth",
     });
+    setMenuOpen(false);
   };
 
   const scrollFooter = () => {
     footer.current.scrollIntoView({
       behavior: "smooth",
     });
+    setMenuOpen(false);
   };
 
   useEffect(() => {
@@ -188,68 +196,24 @@ function App() {
               </svg>
             )}
           </div>
-          {menuOpen && (
-            <div className={classes.sideMenu}>
-              <ul>
-                <li>Hakkımızda</li>
-                <li>Çözümlerimiz</li>
-                <li>Hizmetlerimiz</li>
-                <li>Çözüm Ortaklarımız</li>
-                <li>Referanslarımız</li>
-                <li>Eğitimlerimiz</li>
-                <li>İletişim</li>
-              </ul>
-            </div>
-          )}
+
+          <div
+            className={`${
+              !menuOpen ? classes.sideMenuClose : classes.sideMenu
+            }`}
+          >
+            <ul>
+              <li onClick={scrollAbout}>Hakkımızda</li>
+              <li onClick={scrollSolutions}>Çözümlerimiz</li>
+              <li onClick={scrollDuty}>Hizmetlerimiz</li>
+              <li onClick={scrollPartners}>Çözüm Ortaklarımız</li>
+              <li onClick={scrollReferences}>Referanslarımız</li>
+              <li onClick={scrollCourses}>Eğitimlerimiz</li>
+              <li onClick={scrollFooter}>İletişim</li>
+            </ul>
+          </div>
         </div>
       </nav>
-      {/* <div className={classes.logoBox}>
-        <img
-          src={logo}
-          alt="Logo"
-          className={classes.logo}
-          onClick={scrollTop}
-          checked={!isOnTop}
-        />
-      </div>
-      <div className="navigation">
-        <input
-          type="checkbox"
-          className="navigation__checkbox"
-          id="navi-toggle"
-        />
-        <label htmlFor="navi-toggle" className="navigation__button">
-          <span className="navigation__icon">&nbsp;</span>
-        </label>
-
-        <div className="navigation__background">&nbsp;</div>
-
-        <nav className="navigation__nav">
-          <ul className="navigation__list">
-            <li onClick={scrollAbout} className="navigation__item">
-              <p className="navigation__link">Hakkımızda</p>
-            </li>
-            <li onClick={scrollSolutions} className="navigation__item">
-              <p className="navigation__link">Çözümlerimiz</p>
-            </li>
-            <li onClick={scrollDuty} className="navigation__item">
-              <p className="navigation__link">Hizmetlerimiz</p>
-            </li>
-            <li onClick={scrollPartners} className="navigation__item">
-              <p className="navigation__link">Çözüm Ortaklarımız</p>
-            </li>
-            <li onClick={scrollReferences} className="navigation__item">
-              <p className="navigation__link">Referanslarımız</p>
-            </li>
-            <li onClick={scrollCourses} className="navigation__item">
-              <p className="navigation__link">Eğitimlerimiz</p>
-            </li>
-            <li onClick={scrollFooter} className="navigation__item">
-              <p className="navigation__link">İletişim</p>
-            </li>
-          </ul>
-        </nav>
-      </div> */}
 
       <Header scrollAbout={scrollAbout} />
 

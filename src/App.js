@@ -219,25 +219,25 @@ function App() {
 
       <Header scrollAbout={scrollAbout} />
 
-      <div ref={about} data-aos="fade-up">
+      <div ref={about} data-aos="fade-down">
         <About scrollSolutions={scrollSolutions} />
       </div>
-      <div ref={solutions} data-aos="fade-up">
+      <div ref={solutions} data-aos="fade-down">
         <Solutions />
       </div>
-      <div ref={duty} data-aos="fade-up">
+      <div ref={duty} data-aos="fade-down">
         <Duty />
       </div>
-      <div ref={partners} data-aos="fade-up">
+      <div ref={partners} data-aos="fade-down">
         <Partners />
       </div>
-      <div ref={references} data-aos="fade-up">
+      <div ref={references} data-aos="fade-down">
         <References />
       </div>
-      <div ref={courses} data-aos="fade-up">
+      <div ref={courses} data-aos="fade-down">
         <Courses />
       </div>
-      <div ref={footer} data-aos="fade-up">
+      <div ref={footer} data-aos="fade-down">
         <Footer />
       </div>
     </React.Fragment>

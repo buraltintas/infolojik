@@ -81,7 +81,38 @@ const Footer = () => {
           </div>
         </div>
 
-        <MapContainer
+        <div className={classes.map}>
+          <MapContainer
+            style={{ width: "58rem", height: "38rem" }}
+            center={position}
+            zoom={15}
+            scrollWheelZoom={true}
+            className={classes.mapContainer}
+          >
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+            />
+
+            <Marker position={position}>
+              <Popup>
+                <div className={classes.popup}>
+                  <h3>
+                    Ulaşım için{" "}
+                    <a
+                      target="_blank"
+                      href="https://goo.gl/maps/FwU2gnWworE8BgEN8"
+                    >
+                      tıklayınız.
+                    </a>
+                  </h3>
+                </div>
+              </Popup>
+            </Marker>
+          </MapContainer>
+        </div>
+
+        {/* <MapContainer
           style={{ width: "40rem", height: "25rem" }}
           center={position}
           zoom={16}
@@ -94,15 +125,10 @@ const Footer = () => {
           />
           <Marker position={position}>
             <Popup>
-              <h2>
-                Yol tarifi için{" "}
-                <a target="_blank" href="https://goo.gl/maps/FwU2gnWworE8BgEN8">
-                  tıklayınız.
-                </a>
-              </h2>
+              <h2>Yol tarifi için </h2>
             </Popup>
           </Marker>
-        </MapContainer>
+        </MapContainer> */}
       </div>
       <div className={styles.footer}>
         <p className={styles.copyright}>

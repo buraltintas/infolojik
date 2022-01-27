@@ -1,12 +1,10 @@
 .about {
   width: 100%;
-
   display: flex;
-
   padding-right: 5%;
   padding-left: 5%;
   padding-bottom: 20%;
-  padding-top: 15%;
+  padding-top: 10%;
   gap: 3rem;
 
   background: #bdc3c7; /* fallback for old browsers */
@@ -145,10 +143,10 @@
 
 @media (max-width: 55em) {
   .aboutText h1 {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 
   .aboutText p {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }

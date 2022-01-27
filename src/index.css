@@ -10,8 +10,8 @@ html {
   font-size: 62.5%;
 
   max-width: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
 }
 
 body {
@@ -27,8 +27,8 @@ body {
   color: rgb(122, 122, 122);
   background-color: rgb(189, 195, 199);
   max-width: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
 }
 
 @media (max-width: 63em) {

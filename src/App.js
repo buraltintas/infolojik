@@ -113,7 +113,7 @@ function App() {
   }, []);
   return (
     <React.Fragment>
-      <nav className={classes.navigation}>
+      <nav data-aos="fade-down" className={classes.navigation}>
         <div className={classes.logoBox}>
           <img
             src={logo}

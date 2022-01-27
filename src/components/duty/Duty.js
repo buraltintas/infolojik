@@ -11,65 +11,33 @@ const Duty = () => {
     <section className={classes.duty}>
       <div className={classes.typingHeading}>Hizmetlerimiz </div>
       <div className={classes.services}>
-        <div data-aos="fade-right" className={classes.container}>
-          <div className={classes.imgDiv}>
-            <img src={photo3} alt="" className={classes.img} />
-          </div>
-          <div className={classes.text}>
-            <div className={classes.textContainer}>
-              <h1>Danışmanlık</h1>
-
-              <p>
-                Müşterilerimizin projelerinde görevlendirilmek üzere alanında
-                uzman kadromuz ile verdiğimiz hizmettir.
-              </p>
-            </div>
-          </div>
+        <div className={classes.card}>
+          <h2 className={classes.cardHeading}>Danışmanlık</h2>
+          <p className={classes.cardText}>
+            Müşterilerimizin projelerinde görevlendirilmek üzere alanında uzman
+            kadromuz ile verdiğimiz hizmettir.
+          </p>
         </div>
-        <div data-aos="fade-left" className={classes.container}>
-          <div className={classes.imgDiv}>
-            <img src={photo4} alt="" className={classes.img} />
-          </div>
-          <div className={classes.text}>
-            <div className={classes.textContainer}>
-              <h1>Dış Kaynak</h1>
-
-              <p>
-                Müşterilerimizin kendi ekipleri içinde görevlendireceği alanında
-                uzman kadromuz ile verdiğimiz hizmettir.
-              </p>
-            </div>
-          </div>
+        <div className={`${classes.card} ${classes.card2}`}>
+          <h2 className={classes.cardHeading}>Dış Kaynak</h2>
+          <p className={classes.cardText}>
+            Müşterilerimizin kendi ekipleri içinde görevlendireceği alanında
+            uzman kadromuz ile verdiğimiz hizmettir.
+          </p>
         </div>
-        <div data-aos="fade-right" className={classes.container}>
-          <div className={classes.imgDiv}>
-            <img src={photo1} alt="" className={classes.img} />
-          </div>
-          <div className={classes.text}>
-            <div className={classes.textContainer}>
-              <h1>Eğitim</h1>
-
-              <p>
-                Müşterilerimizin iş zekası, veri ambarı ve büyük veri
-                alanlarında uygulamalı olarak sunduğumuz eğitim hizmetidir.
-              </p>
-            </div>
-          </div>
+        <div className={`${classes.card} ${classes.card3}`}>
+          <h2 className={classes.cardHeading}>Eğitim</h2>
+          <p className={classes.cardText}>
+            Müşterilerimizin iş zekası, veri ambarı ve büyük veri alanlarında
+            uygulamalı olarak sunduğumuz eğitim hizmetidir.
+          </p>
         </div>
-        <div data-aos="fade-left" className={classes.container}>
-          <div className={classes.imgDiv}>
-            <img src={photo2} alt="" className={classes.img} />
-          </div>
-          <div className={classes.text}>
-            <div className={classes.textContainer}>
-              <h1>Bakım&Destek</h1>
-
-              <p>
-                Müşterilerimizin tamamlanan projeleri sonrasında ihtiyaç
-                duyulacak teknik veya operasyonel destek hizmetimizdir.
-              </p>
-            </div>
-          </div>
+        <div className={`${classes.card} ${classes.card4}`}>
+          <h2 className={classes.cardHeading}>Bakım & Destek</h2>
+          <p className={classes.cardText}>
+            Müşterilerimizin tamamlanan projeleri sonrasında ihtiyaç duyulacak
+            teknik veya operasyonel destek hizmetimizdir.
+          </p>
         </div>
       </div>
     </section>

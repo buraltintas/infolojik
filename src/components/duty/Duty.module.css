@@ -196,3 +196,11 @@
 .cardText {
   text-shadow: 1px 2px 6px black;
 } */
+
+@media (max-width: 30em) {
+  .img {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}

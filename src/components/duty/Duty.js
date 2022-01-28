@@ -28,8 +28,8 @@ const Duty = () => {
         <div data-aos="zoom-in" className={classes.card}>
           <div className={classes.cardTop}>
             <div className={`${classes.img} ${classes.img2}`}></div>
-            <div>
-              <h1 className={classes.headingText}>Dış Kaynak</h1>
+            <div className={classes.headingText}>
+              <h1 className={classes.headingDuty}>Dış Kaynak</h1>
             </div>
           </div>
           <div className={classes.cardBottom}>
@@ -42,8 +42,8 @@ const Duty = () => {
         <div data-aos="zoom-in" className={classes.card}>
           <div className={classes.cardTop}>
             <div className={`${classes.img} ${classes.img3}`}></div>
-            <div>
-              <h1 className={classes.headingText}>Eğitim</h1>
+            <div className={classes.headingText}>
+              <h1 className={classes.headingDuty}>Eğitim</h1>
             </div>
           </div>
           <div className={classes.cardBottom}>
@@ -56,8 +56,8 @@ const Duty = () => {
         <div data-aos="zoom-in" className={classes.card}>
           <div className={classes.cardTop}>
             <div className={`${classes.img} ${classes.img4}`}></div>
-            <div>
-              <h1 className={classes.headingText}>Bakım & Destek</h1>
+            <div className={classes.headingText}>
+              <h1 className={classes.headingDuty}>Bakım & Destek</h1>
             </div>
           </div>
           <div className={classes.cardBottom}>

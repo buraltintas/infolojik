@@ -86,10 +86,10 @@
 
 .cardTop {
   display: flex;
-  width: 60rem;
+  width: 40rem;
   margin: 0 auto;
   align-items: center;
-  justify-content: center;
+
   gap: 2rem;
   position: relative;
   border-bottom: 1px dashed rgba(110, 194, 227, 0.6);
@@ -99,6 +99,10 @@
 
 .headingText {
   width: 60rem;
+}
+
+.headingDuty {
+  width: 30rem !important;
 }
 
 .cardBottom {

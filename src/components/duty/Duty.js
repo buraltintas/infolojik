@@ -15,7 +15,7 @@ const Duty = () => {
           <div className={classes.cardTop}>
             <div className={`${classes.img} ${classes.img1}`}></div>
             <div className={classes.headingText}>
-              <h1>Danışmanlık</h1>
+              <h1 className={classes.headingDuty}>Danışmanlık</h1>
             </div>
           </div>
           <div className={classes.cardBottom}>

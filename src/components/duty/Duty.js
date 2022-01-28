@@ -9,9 +9,7 @@ import "aos/dist/aos.css";
 const Duty = () => {
   return (
     <section className={classes.duty}>
-      <div data-aos="fade-left" className={classes.typingHeading}>
-        Hizmetlerimiz
-      </div>
+      <div className={classes.typingHeading}>Hizmetlerimiz</div>
       <div className={classes.services}>
         <div data-aos="zoom-in" className={classes.card}>
           <div className={classes.cardTop}>

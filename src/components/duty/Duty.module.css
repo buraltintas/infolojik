@@ -97,6 +97,10 @@
     1px 2px 6px rgba(110, 194, 227, 0.74);
 }
 
+.headingText {
+  width: 60rem;
+}
+
 .cardBottom {
   display: flex;
   align-items: center;
@@ -111,7 +115,7 @@
   background-position: center;
   position: absolute;
   top: -7rem;
-  left: -4rem;
+  left: -22rem;
   border-radius: 2rem;
 }
 

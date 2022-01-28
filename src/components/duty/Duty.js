@@ -14,8 +14,8 @@ const Duty = () => {
         <div data-aos="zoom-in" className={classes.card}>
           <div className={classes.cardTop}>
             <div className={`${classes.img} ${classes.img1}`}></div>
-            <div>
-              <h1 className={classes.headingText}>Danışmanlık</h1>
+            <div className={classes.headingText}>
+              <h1>Danışmanlık</h1>
             </div>
           </div>
           <div className={classes.cardBottom}>

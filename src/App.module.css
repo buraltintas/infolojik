@@ -66,8 +66,7 @@
   padding: 1rem;
   border-radius: 1rem;
   opacity: 0;
-  display: hidden;
-  visibility: hidden;
+
   animation: moveOutRight 0.7s ease-out;
   animation-fill-mode: backwards;
 }
@@ -80,6 +79,8 @@
   align-items: center;
   width: 25rem;
   transition: all 0.5s;
+  animation: moveOutRight 0.7s ease-out;
+  animation-fill-mode: backwards;
 }
 
 .sideMenu ul {
@@ -165,19 +166,15 @@
     transform: translate(0);
   }
 
-  40% {
-    opacity: 0.35;
-  }
-
   80% {
-    opacity: 0.7;
+    opacity: 0.6;
     transform: translateX(-1rem);
   }
 
   100% {
-    opacity: 0;
-
-    visibility: hidden;
     transform: translateX(100%);
+    display: hidden;
+    visibility: hidden;
+    opacity: 0;
   }
 }

@@ -220,4 +220,8 @@
   .services {
     gap: 3rem;
   }
+
+  .duty {
+    gap: 3rem;
+  }
 }

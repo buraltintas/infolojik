@@ -34,7 +34,7 @@ const Courses = () => {
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
 
-  if (oracleModalOpen) {
+  if (oracleModalOpen || microsoftModalOpen || pentahoModalOpen) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "auto";

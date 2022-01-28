@@ -18,12 +18,10 @@ const References = () => {
         <div className={classes.reference}>
           <div className={classes.img1}></div>
           <div className={classes.img2}></div>
-        </div>
-        <div className={classes.reference}>
           <div className={classes.img3}></div>
-          <div className={classes.img4}></div>
         </div>
         <div className={classes.reference}>
+          <div className={classes.img4}></div>
           <div className={classes.img5}></div>
           <div className={classes.img6}></div>
         </div>
@@ -31,6 +29,7 @@ const References = () => {
           <div className={classes.img7}></div>
           <div className={classes.img8}></div>
         </div>
+
         <div className={classes.reference}>
           <div className={classes.img9}></div>
           <div className={classes.img10}></div>

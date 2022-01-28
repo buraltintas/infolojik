@@ -208,8 +208,11 @@
 
 @media (max-width: 30em) {
   .img {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
+    width: 10rem;
+    height: 7rem;
   }
+
+  /* .card {
+    gap: 2rem;
+  } */
 }

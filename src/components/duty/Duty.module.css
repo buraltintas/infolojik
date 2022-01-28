@@ -216,4 +216,8 @@
   .card {
     gap: 2rem;
   }
+
+  .services {
+    gap: 3rem;
+  }
 }

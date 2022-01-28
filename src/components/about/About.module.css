@@ -158,3 +158,9 @@
     font-size: 2rem;
   }
 }
+
+@media (max-width: 30em) {
+  .aboutText {
+    width: 80%;
+  }
+}
